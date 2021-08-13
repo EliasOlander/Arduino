@@ -1,0 +1,173 @@
+#include <Servo.h>
+
+void setup() {
+  pinMode(5,OUTPUT);
+  pinMode(6,OUTPUT);
+  pinMode(8,OUTPUT);
+  pinMode(9,OUTPUT);
+  pinMode(4,INPUT);
+  pinMode(3,OUTPUT);
+  
+  int delayTime = 500;
+
+  
+  Servo head;
+  head.attach(10);
+  head.write(0);
+  delay(delayTime);
+  tone(7,200);
+  digitalWrite(5,HIGH);
+  head.write(90);
+  delay(delayTime);
+  noTone(7);
+  digitalWrite(5,LOW);
+  head.write(0);
+  delay(delayTime);
+
+  digitalWrite(6,HIGH);
+  tone(7, 250);
+  delay(delayTime);
+  noTone(7);
+  digitalWrite(6,LOW);
+
+  Servo body;
+  body.attach(12);
+  body.write(0);
+  delay(delayTime);
+  tone(7, 200);
+  digitalWrite(8,HIGH);
+  body.write(90);
+  delay(delayTime);
+  noTone(7);
+  digitalWrite(8,LOW);
+  body.write(0);
+  
+  Servo arm;
+  arm.attach(11);
+  arm.write(0);
+  delay(delayTime);
+  tone(7,250);
+  digitalWrite(9,HIGH);
+  arm.write(180);
+  delay(delayTime);
+  noTone(7);
+  digitalWrite(9,LOW);
+  arm.write(0);
+  delay(delayTime);
+
+  digitalWrite(5,HIGH);
+  digitalWrite(6,HIGH);
+  digitalWrite(8,HIGH);
+  digitalWrite(9,HIGH);
+  tone(7,200);
+  delay(delayTime);
+  noTone(7),
+  digitalWrite(5,LOW);
+  digitalWrite(6,LOW);
+  digitalWrite(8,LOW);
+  digitalWrite(9,LOW);
+  
+  head.write(0);
+  delay(delayTime);
+  tone(7,200);
+  digitalWrite(5,HIGH);
+  head.write(90);
+  delay(delayTime);
+  noTone(7);
+  digitalWrite(5,LOW);
+  head.write(0);
+  delay(delayTime);
+
+  digitalWrite(6,HIGH);
+  tone(7, 250);
+  delay(delayTime);
+  noTone(7);
+  digitalWrite(6,LOW);
+
+  body.write(0);
+  delay(delayTime);
+  tone(7, 200);
+  digitalWrite(8,HIGH);
+  body.write(90);
+  delay(delayTime);
+  noTone(7);
+  digitalWrite(8,LOW);
+  body.write(0);
+  
+  arm.write(0);
+  delay(delayTime);
+  tone(7,250);
+  digitalWrite(9,HIGH);
+  arm.write(180);
+  delay(delayTime);
+  noTone(7);
+  digitalWrite(9,LOW);
+  arm.write(0);
+  delay(delayTime);
+
+  digitalWrite(5,HIGH);
+  digitalWrite(6,HIGH);
+  digitalWrite(8,HIGH);
+  digitalWrite(9,HIGH);
+  tone(7,200);
+  delay(delayTime);
+  noTone(7),
+  digitalWrite(5,LOW);
+  digitalWrite(6,LOW);
+  digitalWrite(8,LOW);
+  digitalWrite(9,LOW);
+
+  head.write(0);
+  delay(delayTime);
+  tone(7,200);
+  digitalWrite(5,HIGH);
+  head.write(90);
+  delay(delayTime);
+  noTone(7);
+  digitalWrite(5,LOW);
+  head.write(0);
+  delay(delayTime);
+
+  digitalWrite(6,HIGH);
+  tone(7, 250);
+  delay(delayTime);
+  noTone(7);
+  digitalWrite(6,LOW);
+
+  body.write(0);
+  delay(delayTime);
+  tone(7, 200);
+  digitalWrite(8,HIGH);
+  body.write(90);
+  delay(delayTime);
+  noTone(7);
+  digitalWrite(8,LOW);
+  body.write(0);
+  
+  arm.write(0);
+  delay(delayTime);
+  tone(7,250);
+  digitalWrite(9,HIGH);
+  arm.write(180);
+  delay(delayTime);
+  noTone(7);
+  digitalWrite(9,LOW);
+  arm.write(0);
+  delay(delayTime);
+
+  digitalWrite(5,HIGH);
+  digitalWrite(6,HIGH);
+  digitalWrite(8,HIGH);
+  digitalWrite(9,HIGH);
+  tone(7,200);
+  delay(delayTime);
+  noTone(7),
+  digitalWrite(5,LOW);
+  digitalWrite(6,LOW);
+  digitalWrite(8,LOW);
+  digitalWrite(9,LOW);
+}
+
+void loop() {
+  
+}
